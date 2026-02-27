@@ -10,14 +10,13 @@ const SearchBar = () => {
         })
 const switchType=(val)=>{
     setQuery((prev)=>({...prev,type:val}));
-
 }
   return (
     <div className='searchBar'>
 
 <div className='type'>
     {types.map((item,index)=>(
-        <button onClick={()=>switchType(item)} className={query.type===?"active":""}>{item}</button>
+        <button onClick={()=>switchType(item)} className={query.type===item?"active":""}>{item}</button>
 
 ))}
 

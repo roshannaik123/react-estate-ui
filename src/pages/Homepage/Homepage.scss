@@ -1,9 +1,10 @@
 @import "../../responsive.scss";
 .homePage{
     display:flex;
-    height:100vh;
+    height:100%;
+
     @include sm{
-overflow: scroll;
+overflow-y: scroll;
     }
 }
 .textContainer{
